@@ -3,52 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>404 - Page Not Found</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-direction: column;
         }
-        .error-container {
-            background: white;
+        .container {
+            max-width: 600px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            max-width: 350px;
         }
         h1 {
-            font-size: 40px;
+            font-size: 60px;
             color: #d9534f;
+            margin: 0;
         }
         p {
-            font-size: 16px;
+            font-size: 18px;
+            margin: 10px 0;
         }
         .btn {
             display: inline-block;
-            padding: 8px 15px;
+            padding: 10px 20px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .btn:hover {
             background-color: #0056b3;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="error-container">
+
+    <div class="container">
         <h1>404</h1>
-        <p>Page Not Found.</p>
-        <a href="/" class="btn">Go Home</a>
+        <p>We couldn't find the page you are looking for.</p>
+        <a href="/" class="btn">Go back to the homepage</a>
+        <img src="https://img.freepik.com/free-vector/astronaut-background-space_23-2147902757.jpg" alt="Astronaut floating in space">
     </div>
+
 </body>
 </html>
+
+        

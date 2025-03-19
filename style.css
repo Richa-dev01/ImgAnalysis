@@ -1,6 +1,7 @@
 body {
     text-align: center;
     padding: 50px;
+    background-color: rgb(205, 232, 255)232, 255);
 }
 
 .upload-box {
@@ -15,6 +16,18 @@ body {
 .upload-box:hover {
     background-color: #f3eded;
 }
+
+img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+  }
 
 .preview-images {
     display: flex;
@@ -32,4 +45,21 @@ body {
 .emoji {
     font-size: 40px;
     margin-bottom: 10px;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: min-content;
+    left: 0;
+    bottom:0;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    padding: 10px;
 }

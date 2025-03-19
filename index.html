@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
     <title>ImgAnalysis</title>
     <link rel="icon" type="image/x-icon"
-        href="C:\Users\RICHA\OneDrive\Desktop\HTML\a logo for a webpage that removes the background.png">
+        href="/public/images/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,8 +17,10 @@
     <h3>Upload an image to remove the background</h3>
 
     <div class="upload-box" onclick="document.getElementById('fileInput').click();">
-        <input type="file" id="fileInput" accept="image/*">
-        <img id="preview" alt="Preview">
+        <input type="file" id="fileInput" accept="image/*" hidden>
+        <section>
+            <img height="100" width="100" id="preview" alt="Preview">
+        </section>
         <button class="btn btn-primary">Upload Image</button>
         <p class="mt-2">or drop a file,<br>paste image or <a href="#">URL</a></p>
         <div id="result"></div>
@@ -31,10 +34,14 @@
         <img src="/public/images/pexels-saimon-11556663.jpg" alt="Sample 4">
     </div>
 
-    <p class="mt-3 text-muted" style="font-size: 12px;">
+    <p class="mt-3 text-muted">
         By uploading an image or URL you agree to our <a href="#">Terms of Service</a>.
         Learn more about how we handle personal data in our <a href="#">Privacy Policy</a>.
     </p>
+
+    <footer>
+        <p>Designed and developed by <a href="#">Richa</a> , <a href="">Rachana</a> and <a href="">Shubham</a> under <a href="">Anveshan.</a></p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
